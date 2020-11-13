@@ -1,0 +1,5 @@
+<%= image_tag("#{@currentWombat[:url]}", alt: "A picture of what is most likely
+a wombat") %> <%= button_to "New wombat", wombats_index_url, :method => :get,
+:class => "button button-new" %> <%= button_to "Not a wombat", {:controller =>
+:wombats, :action => 'destroy', :id => @currentWombat[:id] }, :method =>
+:delete, :class => "button button-delete" %>

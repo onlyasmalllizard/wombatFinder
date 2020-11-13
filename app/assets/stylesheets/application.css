@@ -1,0 +1,73 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #ee964b;
+  color: #0d3b66;
+  margin: 0;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  border-top: 3px solid #f4d35e;
+  padding: 1vw;
+  color: #fbf3d4;
+  font-size: small;
+}
+
+h1 {
+  font-size: 1.75vw;
+  text-align: center;
+}
+
+p {
+  width: 100%;
+  max-width: 60vw;
+
+  text-align: center;
+  line-height: 25px;
+}
+
+strong {
+  color: #f95738;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2vw;
+  line-height: 1vh;
+}
+
+.main-container {
+  background-color: #faf0ca;
+  display: grid;
+  grid-template-columns: 2fr repeat(4, 1fr) 2fr;
+  grid-template-rows: repeat(2, 15 vh) 1fr 10vh;
+  padding: 1vw;
+  width: 100%;
+}
+
+.header-text {
+  grid-column: 2 / span 4;
+  grid-row-start: 1;
+}
+
+.welcome-text {
+  grid-column: 2 / span 4;
+  grid-row-start: 2;
+}

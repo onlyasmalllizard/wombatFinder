@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>WombatFinder</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="main-container">
+    <h1 class="header-text">
+      Welcome to <strong>Wombat Finder</strong>, dedicated to finding you the
+      wombat your heart desires.
+    </h1>
+    <p class="welcome-text">
+      Not satisfied with the displayed wombat? Click "New Wombat" and we'll
+      get you another! Did we make a mistake and show you something that is
+      not a wombat at all? Select "Not a wombat!" to keep us from showing it
+      to anyone else!
+    </p>
+    <%= yield %>
+  </div>
+</body>
+<footer>
+  <div>
+    All images are sourced randomly from Google Image search and do not belong
+    to me.
+  </div>
+  <div>Made by Lizard 2020</div>
+</footer>
+
+</html>
